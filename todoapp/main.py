@@ -1,9 +1,5 @@
-from typing import Annotated
-from sqlalchemy.orm import Session
-from pydantic import BaseModel, Field
 
-from fastapi import FastAPI, Depends, HTTPException, Path
-from starlette import status
+from fastapi import FastAPI
 import models
 from database import engine
 from routers import auth, todos, admin
